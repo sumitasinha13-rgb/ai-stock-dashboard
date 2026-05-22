@@ -24,24 +24,28 @@ export default function Home() {
   ];
 
   return (
-    <div style={{
-      padding:"40px",
-      fontFamily:"Arial",
-      background:"#f4f7fb",
-      minHeight:"100vh"
-    }}>
+    <div
+      style={{
+        padding: "40px",
+        fontFamily: "Arial",
+        background: "#f4f7fb",
+        minHeight: "100vh"
+      }}
+    >
       <h1>📈 AI NSE Smart Opportunity Finder</h1>
       <p>AI-powered stock opportunities dashboard</p>
 
-      {picks.map((stock,index)=>(
-        <div key={index}
-        style={{
-          background:"white",
-          padding:"20px",
-          marginTop:"20px",
-          borderRadius:"12px",
-          boxShadow:"0 2px 8px rgba(0,0,0,0.1)"
-        }}>
+      {picks.map((stock, index) => (
+        <div
+          key={index}
+          style={{
+            background: "white",
+            padding: "20px",
+            marginTop: "20px",
+            borderRadius: "12px",
+            boxShadow: "0 2px 8px rgba(0,0,0,0.1)"
+          }}
+        >
           <h2>{stock.name}</h2>
 
           <p>Score: {stock.score}/100</p>
