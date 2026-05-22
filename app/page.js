@@ -24,14 +24,12 @@ export default function Home() {
   ];
 
   return (
-    <div
-      style={{
-        padding: "40px",
-        fontFamily: "Arial",
-        background: "#f4f7fb",
-        minHeight: "100vh"
-      }}
-    >
+    <div style={{
+      padding: "40px",
+      fontFamily: "Arial",
+      background: "#f4f7fb",
+      minHeight: "100vh"
+    }}>
       <h1>📈 AI NSE Smart Opportunity Finder</h1>
       <p>AI-powered stock opportunities dashboard</p>
 
@@ -53,11 +51,7 @@ export default function Home() {
           <p>Confidence: {stock.confidence}</p>
           <p>Type: {stock.type}</p>
 
-          <button
-            onClick={() => {
-              alert(stock.name + " | AI Score: " + stock.score + "/100");
-            }}
-          >
+          <button>
             View Opportunity
           </button>
         </div>
