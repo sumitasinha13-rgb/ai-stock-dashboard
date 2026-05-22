@@ -54,24 +54,7 @@ export default function Home() {
           <p>Type: {stock.type}</p>
 
           <button>
-            <button
-  onClick={() =>
-    alert(
-      `${stock.name}
-
-AI Score: ${stock.score}/100
-Risk: ${stock.risk}
-Confidence: ${stock.confidence}
-Type: ${stock.type}
-
-Suggestion: ${
-        stock.score > 85 ? "BUY / WATCHLIST" : "HOLD"
-      }`
-    )
-  }
->
-  View Opportunity
-</button>
+           View Opportunity
           </button>
         </div>
       ))}
