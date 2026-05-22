@@ -53,14 +53,14 @@ export default function Home() {
           <p>Confidence: {stock.confidence}</p>
           <p>Type: {stock.type}</p>
 
-<button
-  onClick={() => {
-    alert(stock.name + " | AI Score: " + stock.score + "/100");
-  }}
->
-  View Opportunity
-</button>
-    </div>
+          <button
+            onClick={() => {
+              alert(stock.name + " | AI Score: " + stock.score + "/100");
+            }}
+          >
+            View Opportunity
+          </button>
+        </div>
       ))}
     </div>
   );
